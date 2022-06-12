@@ -405,16 +405,16 @@ label {
       var musicStar=["謝震廷","小藍背心","任然","黃霄雲","程響","顏志琳","吳青峰","林俊傑","周興哲","魏如萱","鄧紫棋","吳青峰","動力火車","家家","吳青峰","楊丞琳","周興哲","告五人","盧廣仲","梁靜茹","吳青峰","陳昕玥","陳昕玥","陳友廷","周杰倫","郁可唯","張惠妹","鄧紫棋","盧廣仲","阿桑","張棟樑","張惠妹","張宇","阿冗","白小白","許佳豪","蕭煌奇","周二珂","蔡恩雨","Lady Gaga","蕭煌奇","蕭煌奇","任然","楊宗緯","虎二","老王樂隊","老王樂隊","老王樂隊","黃明志","黃明志","黃明志","黃明志","黃明志","黃明志","黃明志","黃明志","黃明志"]
       var musicListen=["動力火車精選.mp3","趙傳精選.mp3","任賢齊精選.mp3","陶喆精選.mp3"];
       var musicStaren=["動力火車","趙傳","任賢齊","陶喆"];
-	//   var musicListjp=["us.mp3","Prover.mp3","Who I Am.mp3","Tell me.mp3","Drown.mp3","The Love We've Made.mp3","夜に駆ける.mp3","群青.mp3","怪物.mp3","シャルル.mp3","蝶々結び.mp3","Ref rain.mp3","Rokutouseino Yoru.mp3","さよならの今日に.mp3","Remember the Days We're Talking Rubbish in the Twilight.mp3","貓.mp3"];
-   //    var musicStarjp=["Milet","Milet","Milet","Milet","Milet","Milet","YOASOBI","YOASOBI","YOASOBI","バルーン","Aimer","Aimer","Aimer","Aimyon","Aimyon","DISH"];
-	  var totallist=[musicList,musicListen];
-	  var totalstarlist=[musicStar,musicStaren];
+	  var musicListjp=[];
+      var musicStarjp=[];
+	  var totallist=[musicList,musicListen,musicListjp];
+	  var totalstarlist=[musicStar,musicStaren,musicStarjp];
 	  var myAudio=document.getElementById("myAudio");
       myAudio.volume=document.getElementById("soundRange").value/100;
       var nowMusicNum=0;
 	  var totalNum=56;
 	  var totalNumen=3;
-	//   var totalNumjp=15;
+	  var totalNumjp=0;
       //default play first song 
       $("#myAudio source").attr("src","music/"+(musicList[nowMusicNum])+"");
       //display song info
